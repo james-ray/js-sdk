@@ -112,10 +112,12 @@ export const createStreamInstruction = (
   );
   bufferData = bufferData.slice(0, encodeLength);
   bufferData = Buffer.concat([
-    Buffer.from(sha256.digest("global:create")).slice(0, 8),
+    Buffer.from("0").slice(0, 8), //  Buffer.from(sha256.digest("global:create")).slice(0, 8),
     bufferData,
     Buffer.alloc(10)
   ]);
+  console.log("444444444444444")
+  console.log("bufferData: "+bufferData)
 
   return new TransactionInstruction({
     keys,
