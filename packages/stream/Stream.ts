@@ -75,7 +75,7 @@ export default class Stream {
    * @param {BN} data.cliffAmount - Amount unlocked at the "cliff".
    * @param {BN} data.amountPerPeriod - Amount unlocked per each period.
    * @param {string} data.name - Stream name/subject.
-   * @param {boolean} data.canTopup - TRUE for streams, FALSE for vesting contracts.
+   * @param {bstreamoolean} data.canTopup - TRUE for streams, FALSE for vesting contracts.
    * @param {boolean} data.cancelableBySender - Whether or not sender can cancel the stream.
    * @param {boolean} data.cancelableByRecipient - Whether or not recipient can cancel the stream.
    * @param {boolean} data.transferableBySender - Whether or not sender can transfer the stream.
